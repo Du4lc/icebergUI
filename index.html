@@ -11,35 +11,29 @@
       box-sizing: border-box;
     }
 
-    body, html {
-      height: 100%;
-    }
-
-    .barra-superior {
-      width: 100%;
-      background-color: black;
-      color: white;
-      padding: 20px;
-      text-align: center;
-      font-size: 24px;
-      font-family: sans-serif;
-    }
-
-    .fondo-iceberg {
-      width: 100%;
-      height: calc(100vh - 60px); /* Ajusta según la altura real de la barra */
+    body {
+      height: 100vh;
       background-image: url('iceberg.png');
       background-repeat: no-repeat;
-      background-position: center;
-      background-size: contain; /* Muestra la imagen completa */
-      background-color: #000; /* Opcional: color de fondo si sobra espacio */
+      background-position: center bottom;
+      background-size: contain; /* Para que se vea entera */
+      background-color: black;  /* Por si la imagen no ocupa todo */
+      font-family: sans-serif;
+      color: white;
+    }
+
+    .cabecera {
+      width: 100%;
+      background-color: black;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 24px;
     }
   </style>
 </head>
 <body>
 
-  <div class="barra-superior">iceberg</div>
-  <div class="fondo-iceberg"></div>
+  <div class="cabecera">iceberg</div>
 
 </body>
 </html>
