@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fondo Iceberg</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+    }
+
+    .barra-superior {
+      width: 100%;
+      background-color: black;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 24px;
+      font-family: sans-serif;
+    }
+
+    .fondo-iceberg {
+      width: 100%;
+      height: calc(100vh - 60px); /* Ajusta según la altura real de la barra */
+      background-image: url('iceberg.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain; /* Muestra la imagen completa */
+      background-color: #000; /* Opcional: color de fondo si sobra espacio */
+    }
+  </style>
+</head>
+<body>
+
+  <div class="barra-superior">iceberg</div>
+  <div class="fondo-iceberg"></div>
+
+</body>
+</html>
