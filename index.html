@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Iceberg</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            color: white;
+            background-color: black;
+        }
+
+        /* Franja superior */
+        .cabecera {
+            width: 100%;
+            background-color: black;
+            padding: 20px;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        .cabecera img {
+            max-height: 40px;
+            width: auto;
+            vertical-align: middle;
+        }
+
+        /* Contenedor para la imagen iceberg */
+        .fondo-iceberg {
+            width: 100%;
+        }
+
+        /* Estilos para PC */
+        @media (min-width: 768px) {
+            .fondo-iceberg img {
+                width: 100%;
+                height: auto; /* altura real, obliga a hacer scroll si es muy alta */
+                display: block;
+            }
+        }
+
+        /* Estilos para móvil */
+        @media (max-width: 767px) {
+            html, body {
+                height: 100%;
+                overflow: hidden; /* para que no haga scroll */
+            }
+            .fondo-iceberg {
+                height: 100vh; /* ocupa toda la pantalla */
+            }
+            .fondo-iceberg img {
+                width: auto;
+                height: 100vh; /* ocupa toda la altura sin scroll */
+                display: block;
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cabecera">
+        <img src="img/icesolid.png" alt="Logo IceSolid" />
+    </div>
+    <div class="fondo-iceberg">
+        <img src="img/iceberg.png" alt="Iceberg" />
+    </div>
+</body>
+</html>
